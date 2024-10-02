@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop_stable_diffusion</title>
+</head>
+<body>
+    <img id="python_video" width="512" height="512">
+    <h1>プロンプト入力</h1>
+    
+    <div id="listContainer">
+        <div class="list-item">
+            <input type="text" name="item1[]" placeholder="リスト1, アイテム1">
+            <button onclick="addItem(this)">アイテムを追加</button>
+        </div>
+    </div>
+    
+    <button onclick="addList()">リストを追加</button>
+    <button onclick="sendData()">送信</button>
+    <button onclick="resetForm()">リセット</button>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
